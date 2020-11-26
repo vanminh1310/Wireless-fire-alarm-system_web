@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+ 
+  <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+  <!-- <title>Login Form Design | CodeLab</title> -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<!-- them hai cai nay vao dau de cho no chay -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+  <div class="signin">
+    <h2 class="heading-system">Wireless fire alarm system</h2>
+
+    <h6 class="signin-heading">Sign in</h6>
+   
+
+    <form action="javscript:voi(0);" class="signin-form" autocomplete="off">
+      <div class="form-group">
+        <label for="name" class="form-label">User name</label>
+        <input type="email" class="form-input" id="user" placeholder="Eg: johndoe@email.com">
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Password</label>
+        <input type="password" class="form-input" id="pass" placeholder="Eg: Password">
+      </div>
+      <!-- <button onclick="signIn()" class="form-submit">Sign in</button> -->
+      <input  class="form-submit" onclick=" signIn()" value="LOGIN" type="button" ></input>
+      <a style="color: red;" id="qmk"></a>
+    </form>
+    <p class="signin-already"> Do not have an account ? <a href="#" class="signin-already-link">Sign Up</a></p>
+  </div>
+
+ 
+  <script src="/js/login.js"></script>
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script> -->
+
+
+ 
+ 
+
+
+</body>
+
+</html>

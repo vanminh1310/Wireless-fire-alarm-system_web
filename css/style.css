@@ -1,0 +1,99 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f3f5;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 80px 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .signin {
+    padding: 80px 60px;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 480px;
+  }
+  .signin-heading {
+    text-align: center;
+    font-weight: 600;
+    color: #363a40;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .heading-system{
+      margin-top: -25px;
+      text-align: center;
+      font-weight:200;
+      font-size: 30px;
+   
+  }
+
+ 
+  .signin-already {
+    text-align: center;
+    color: #363a40;
+    font-size: 13px;
+  }
+  .signin-already-link {
+    color: #4c6ef4;
+    text-decoration: none;
+  }
+  
+  .form-groin {
+    margin-bottom: 25px;
+  }
+  
+  .form-label {
+    display: inline-block;
+    cursor: pointer;
+    color: #363a40;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .form-input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f3f5;
+    color: #363a40;
+    font-size: 16px;
+  }
+  .form-input::-webkit-input-placeholder {
+    color: #b4bdc1;
+  }
+  
+  .form-submit {
+    display: block;
+    margin-top: 45px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    background-color: #81c91d;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px -5px rgba(129, 201, 29, 0.9);
+    outline: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .signin {
+      padding: 30px 20px;
+    }
+  }
+  
