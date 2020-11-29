@@ -1,19 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <title>Home</title>
-</head>
-<body>
-    <div id="user_div" class="loggedin-div">
-        <h3>Welcome User</h3>
-        <p style="color:red ;" id="user_para"></p>
-        <button class="btn" onclick="logout()">Logout</button>
-        
-    </div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wireless fire alarm system</title>
+    <link rel="stylesheet" href="css/home1.css">
+    <link rel="shortcut icon" href="img/Traffic-Lights.png" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
     
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      
+      <div class="left_area">
+        <h3>Wireless fire<span> alarm system</span></h3>
+      </div>
+      
+      
+      <div class="right_area">
+        <div class="clock" id="clock"></div>
+       <button class="logout_btn"><img src="img/avatar.png" class="img_admin" alt=""></button> 
+      </div>
+ 
+    </header>
+    
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <center>
+        <img src="img/avatar.png" class="profile_image" alt="">
+        <h4>WECOME</h4>
+        <p class="user" style="color: black;" id="user_para"></p>
+      </center>
+      <a href="home1"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+     
+      <a href="home"><i class="fas fa-info-circle"></i><span>About</span></a>
+      
+      <a onclick="logout()"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+     
+      
+      <!-- <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
+    </div>
+    <!--sidebar end-->
+  
+
+    <div class="content">
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+  
+      <br>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+         <H1>405</H1>
+        </div>
+      </div>
+      
+      
+    </div>
+    <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn" >Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Detail</h2>
+    </div>
+    <div class="modal-body">
+      <p>Name: </p>
+      <p>Time start: </p>
+      <p>Starting position: </p>
+      <p>End Time: </p>
+      <p>End position: </p>
+      <p>TTime of route: </p>
+      </div>
+      <div class="getdata">
+        <a class="a_getdata" style="text-decoration:none;" href="https://docs.google.com/spreadsheets/u/0/">Get Data</a>
+      </div>
+  </div>
+
+</div>
+
+
+<script src="js/modal.js">
+
+</script>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
@@ -22,6 +144,8 @@
 <!-- Add additional services that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
  <script src="js/key.js"></script>
+ <script></script>
     
-</body>
+
+  </body>
 </html>
