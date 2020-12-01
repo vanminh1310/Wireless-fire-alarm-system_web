@@ -13,6 +13,11 @@
     // Initialize Firebase
      firebase.initializeApp(firebaseConfig);
 
+     if (!firebase.apps.length) {
+      firebase.initializeApp({});
+   }
+         
+
 
 function logout(){
     firebase.auth().signOut();
@@ -67,6 +72,11 @@ setInterval(displayclock,500);
     document.getElementById('clock').innerHTML=hrs + ':' + min +':' + sec;
   }
 
-// var link = 'https://its-k59.firebaseapp.com/home1.html';
-//   link.split('.html')[0];
-//   window.history.replaceState( null, null, link ); 
+
+
+
+    var modal = document.getElementById('modal_ecall');
+    var btn2= document.getElementById('bnt2');
+    btn2.onclick = function() {
+          modal.style.display = "none";
+        }

@@ -1,389 +1,427 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Wireless fire alarm system</title>
-    <link rel="stylesheet" href="css/home1.css">
-    <link rel="shortcut icon" href="img/Traffic-Lights.png" /> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  </head>
-  <body>
-    
 
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-      
-      <div class="left_area">
-        <h3>Wireless fire<span> alarm system</span></h3>
-      </div>
-      
-      
-      <div class="right_area">
-        <div class="clock" id="clock"></div>
-       <button class="logout_btn"><img src="img/avatar.png" class="img_admin" alt=""></button> 
-      </div>
- 
-    </header>
-    
-    <!--header area end-->
-    <!--sidebar start-->
-    <div class="sidebar">
-      <center>
-        <img src="img/avatar.png" class="profile_image" alt="">
-        <h4>WECOME</h4>
-        <p class="user" style="color: black;" id="user_para"></p>
-      </center>
-      <a href="home1"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-     
-      <a href="home"><i class="fas fa-info-circle"></i><span>About</span></a>
-      
-      <a onclick="logout()"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
-     
-      
-      <!-- <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
+<head>
+  <meta charset="utf-8">
+  <title>Wireless fire alarm system</title>
+  <link rel="stylesheet" href="css/home1.css">
+  <link rel="shortcut icon" href="img/Traffic-Lights.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+
+
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header>
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+
+    <div class="left_area">
+      <h3>Wireless fire<span> alarm system</span></h3>
     </div>
-    <!--sidebar end-->
-  
-
-    <div class="content">
 
 
-      <div class="luachon" style="display: flex;">
-        
-        <label for="Tầng">Chọn tầng :</label>
-        <select  style="height: 20px;" name="Tầng" id="T">
-        <option  id="tc" value="TC">Tất cả</option>
-        <option id="t1" value="T1">Tầng 1</option>
-        <option  id="t2" value="T2">Tầng 2</option>
-        <option  id="t3" value="T3">Tầng 3</option>
-        <option  id="t4" value="T4">Tầng 4</option>
-        <option  id="t5" value="T5">Tầng 5</option>
-  </select>
-      </div>
-      
+    <div class="right_area">
+      <div class="clock" id="clock"></div>
+      <button class="logout_btn"><img src="img/avatar.png" class="img_admin" alt=""></button>
+    </div>
 
-      <!--Tang 1  -->
+  </header>
 
-      <div class="T1" style="display: flex; display: none;">
-        <div class="card">
-          <div class="card-text">
-          <H1>101</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>102</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>103</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>104</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>105</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>106</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>107</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>108</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>109</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>110</H1>
-          </div>
-        </div>
-        
-        
-        
+  <!--header area end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+    <center>
+      <img src="img/avatar.png" class="profile_image" alt="">
+      <h4>WECOME</h4>
+      <p class="user" style="color: black;" id="user_para"></p>
+    </center>
+    <a href="home1"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+
+    <a href="home"><i class="fas fa-info-circle"></i><span>About</span></a>
+
+    <a onclick="logout()"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
 
 
-      </div>
-
-      <!--tang 2  -->
-      <div class="T2" style="display: flex;  display: none;">
-        <div class="card">
-          <div class="card-text">
-          <H1>201</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>202</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>203</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>204</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>205</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>206</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>207</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>208</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>209</H1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-text">
-          <H1>210</H1>
-          </div>
-        </div>
-      </div>
-
-
-        <!-- tang 3 -->
-        <div class="T3" style="display: flex;  display: none;">
-          <div class="card">
-            <div class="card-text">
-            <H1>301</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>302</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>303</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>304</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>305</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>306</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>307</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>308</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>309</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>310</H1>
-            </div>
-          </div>
-        </div>
-        <!-- tang 4 -->
-        <div class="T4" style="display: flex;  display: none;">
-          <div class="card">
-            <div class="card-text">
-            <H1>401</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>402</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>403</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>404</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>405</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>406</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>407</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>408</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>409</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>410</H1>
-            </div>
-          </div>
-        </div>
-        <!-- tang 5  -->
-        <div class="T5" style="display: flex;  display: none;">
-          <div class="card">
-            <div class="card-text">
-            <H1>501</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>502</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>503</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>504</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>505</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>506</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>507</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>508</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>509</H1>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-text">
-            <H1>510</H1>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        
-
-        
+    <!-- <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
   </div>
-    
-    <!-- Trigger/Open The Modal -->
-<!-- <button id="myBtn" >Open Modal</button> -->
+  <!--sidebar end-->
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Detail</h2>
+  <div class="content">
+
+
+    <div class="luachon" style="display: flex;">
+
+      <label for="Tầng">Chọn tầng :</label>
+      <select style="height: 20px;" name="Tầng" id="T" onchange="showw()">
+        <option value="TC">Tất cả</option>
+        <option value="T1">Tầng 1</option>
+        <option value="T2">Tầng 2</option>
+        <option value="T3">Tầng 3</option>
+        <option value="T4">Tầng 4</option>
+        <option value="T5">Tầng 5</option>
+      </select>
     </div>
-    <div class="modal-body">
-      <p>Name: </p>
-      <p>Time start: </p>
-      <p>Starting position: </p>
-      <p>End Time: </p>
-      <p>End position: </p>
-      <p>TTime of route: </p>
+
+
+    <!--Tang 1  -->
+
+    <div class="T1" id="t1" style="display: flex; display: none;">
+      <div class="card">
+        <div class="card-text">
+          <H1>101</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>102</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>103</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>104</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>105</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>106</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>107</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>108</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>109</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>110</H1>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!--tang 2  -->
+    <div class="T2" id="t2" style="display: flex;  display: none;">
+      <div class="card">
+        <div class="card-text">
+          <H1>201</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>202</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>203</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>204</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>205</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>206</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>207</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>208</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>209</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>210</H1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- tang 3 -->
+    <div class="T3" id="t3" style="display: flex;  display: none;">
+      <div class="card">
+        <div class="card-text">
+          <H1>301</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>302</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>303</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>304</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>305</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>306</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>307</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>308</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>309</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>310</H1>
+        </div>
+      </div>
+    </div>
+    <!-- tang 4 -->
+    <div class="T4" id="t4" style="display: flex;  display: none;">
+      <div class="card">
+        <div class="card-text">
+          <H1>401</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>402</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>403</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>404</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>405</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>406</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>407</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>408</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>409</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>410</H1>
+        </div>
+      </div>
+    </div>
+    <!-- tang 5  -->
+    <div class="T5" id="t5" style="display: flex;  display: none;">
+      <div class="card">
+        <div class="card-text">
+          <H1>501</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>502</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>503</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>504</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>505</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>506</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>507</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>508</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>509</H1>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <H1>510</H1>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+
+
+
+
+
+
+
+
+<!--  -->
+  </div>
+
+  <!-- Trigger/Open The Modal -->
+  <!-- <button id="myBtn" >Open Modal</button> -->
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Detail</h2>
+      </div>
+      <div class="modal-body">
+        <p>Name: </p>
+        <p>Time start: </p>
+        <p>Starting position: </p>
+        <p>End Time: </p>
+        <p>End position: </p>
+        <p>TTime of route: </p>
       </div>
       <div class="getdata">
         <a class="a_getdata" style="text-decoration:none;" href="https://docs.google.com/spreadsheets/u/0/">Get Data</a>
       </div>
-  </div>
+    </div>
 
-</div>
+    </div>
+    <!--  -->
+ 
+    <div id="modal_ecall" class="modal_ecall">
+      <div class="modal_content_ecall">
+        <div class="modal_body_ecall">
+            <h1 class="tb">Thông báo <i class="fas fa-exclamation"></i>  </h1>
+            <img class="img" src="img/warring.png">
+           <br>
+            <strong>Xe</strong> 
+            <strong id="name_bus"> 56 </strong>
+            <strong>Đang gặp sự cố tại vị trí </strong>
+            <strong id="local_bus">231325</strong>
+        </div>   
+        <div class="btn_ecall">
+            <button id="bnt1" class="btn_ecall_ btn1">Chi Tiết </button>
+            <button id="bnt2" class="btn_ecall_ btn2">Đóng</button>
+
+        </div>
 
 
-<script src="js/modal.js">
+        </div>
 
-</script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
 
- <script src="js/key.js"></script>
- <script></script>
-    
+    </div>
 
-  </body>
+<!--  -->
+  <script src="js/modal.js">
+  </script>
+
+  
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+
+  
+
+  <script src="js/key.js"></script>
+  <script src="/js/test.js" ></script>
+
+
+</body>
+
 </html>
