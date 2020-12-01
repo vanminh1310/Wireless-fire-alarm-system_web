@@ -35,7 +35,7 @@
 //   }
 // }
 
-function showw(){
+
 var test = document.getElementById('T').value
     if(test=="TC"){
       console.log("tessssss")
@@ -56,4 +56,3 @@ var test = document.getElementById('T').value
     if(test=="T5"){
       console.log("tang 5")
     }
-}
