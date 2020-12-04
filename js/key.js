@@ -13,10 +13,7 @@
     // Initialize Firebase
      firebase.initializeApp(firebaseConfig);
 
-     if (!firebase.apps.length) {
-      firebase.initializeApp({});
-   }
-         
+     
 
 
 function logout(){
@@ -71,12 +68,36 @@ setInterval(displayclock,500);
     }
     document.getElementById('clock').innerHTML=hrs + ':' + min +':' + sec;
   }
-
-
-
-
-    var modal = document.getElementById('modal_ecall');
+    
+  
+  
+  
+  var modal = document.getElementById('modal_ecall');
     var btn2= document.getElementById('bnt2');
     btn2.onclick = function() {
           modal.style.display = "none";
         }
+
+
+        
+
+      
+        // var database = firebase.database();
+        // var test = document.getElementById('thongbao')
+        // var red = firebase.database().ref().child("name");
+        // red.on('value', function (red) //đọc dữ liệu tu firebase
+        // {
+        
+        //     test.innerText = red.val();
+        //     console.log(red.val())
+        //     ;})
+        
+        // thong bao su co 
+        var tb_modal = firebase.database().ref().child("tb");
+            tb_modal.on('value',function(tb_modal){
+              var tb= tb_modal.val();
+              if(tb<10){
+                modal.style.display='block';
+              }
+        
+            })
