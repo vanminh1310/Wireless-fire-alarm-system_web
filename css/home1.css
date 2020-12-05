@@ -206,16 +206,30 @@ body{
 } */
 
 
-.card-text p {
-  color: grey;
+
+/* /nhiet do do am 
+ */
+
+ h3 {
+  color:black;
+  margin-top:5px;
+  margin-left: 35px;
   font-size:15px;
-  font-weight: 300;
 }
-.card-text h1 {
-  margin-top:15px;
-  margin-left: 26px;
-  font-size:28px;
+h6{
+  margin-top:-10px;
+  margin-left: 15px;
+  
 }
+strong{
+  color: #0093E9;
+
+}
+.gf{
+  margin-top: -10px;
+}
+/*  */
+
 .card-stats {
   grid-area: stats;
     display: grid;

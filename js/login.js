@@ -1,15 +1,13 @@
-
 var firebaseConfig = {
-    apiKey: "AIzaSyAe0_zKfODvMK8Otz8hz5LGKNayCECpiZw",
-    authDomain: "its-k59.firebaseapp.com",
-    databaseURL: "https://its-k59.firebaseio.com",
-    projectId: "its-k59",
-    storageBucket: "its-k59.appspot.com",
-    messagingSenderId: "552163072398",
-    appId: "1:552163072398:web:0deb2fc384dd6300a6ecdf",
-    measurementId: "G-YF04DFHNBT"
-  
-  };
+  apiKey: "AIzaSyALyfBlOsvmKDwNQLTKurC5hf_BmFKYnr4",
+  authDomain: "vann-53570.firebaseapp.com",
+  databaseURL: "https://vann-53570.firebaseio.com",
+  projectId: "vann-53570",
+  storageBucket: "vann-53570.appspot.com",
+  messagingSenderId: "476713717043",
+  appId: "1:476713717043:web:93e1c456a05aa8b8130246",
+  measurementId: "G-8PRCPKPS2K"
+};
 // Initialize Firebase
  firebase.initializeApp(firebaseConfig);
  var rootRef = firebase.database().ref();
