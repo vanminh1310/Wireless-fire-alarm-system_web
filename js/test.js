@@ -150,48 +150,45 @@ firebase.initializeApp(firebaseConfig);
   var st = document.getElementById('st')
   // 101
   readh.on('value',function(readh){
-  h.innerHTML=readh.val();
-  console.log(readh);
-  });
-  readt.on('value',function(readt){
-    t.innerHTML=readt.val();
-    
-    console.log(readt);
+    h.innerHTML=readh.val();
+    console.log(readh);
     });
-    readg.on('value',function(readg){
-      var tess1 = readg.val()
-      if (readg.val()==1){
-     g.innerHTML="OK";
-    }
-    else{
-      g.innerHTML="<span style='color: red;'>Wr</span>"
-      name_p.innerHTML="<span style='color: red;'>101<span>"
-      st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
-
-      modal.style.display='block';
-
-    }
-    console.log(readg);
+    readt.on('value',function(readt){
+      t.innerHTML=readt.val();
+      console.log(readt);
       });
-
-
-     readf.on('value',function(readf){
-      var tess2 = readf.val()
-      if (readf.val()==1){
-     f.innerHTML="OK";
-    }
-    else{
-      f.innerHTML="<span style='color: red;'>Wr</span>"
-      name_p.innerHTML="<span style='color: red;'>101<span>"
-      st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
-
-      modal.style.display='block';
-    }
-     
-
-    console.log(readf);
-
-      });
+      readg.on('value',function(readg){
+        if (readg.val()==1){
+       g.innerHTML="OK";
+      }
+      else{
+        g.innerHTML="<span style='color: red;'>Wr</span>"
+        g.innerHTML="<span style='color: red;'>Wr</span>"
+        name_p.innerHTML="<span style='color: red;'>101<span>"
+        st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
+  
+        modal.style.display='block';
+  
+      }
+      console.log(readg);
+        });
+  
+  
+       readf.on('value',function(readf){
+        if (readf.val()==1){
+       f.innerHTML="OK";
+      }
+      else{
+        f.innerHTML="<span style='color: red;'>Wr</span>"
+        g.innerHTML="<span style='color: red;'>Wr</span>"
+        name_p.innerHTML="<span style='color: red;'>101<span>"
+        st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
+  
+        modal.style.display='block';
+  
+      }
+      console.log(readf);
+        });
 
 
     // 202
