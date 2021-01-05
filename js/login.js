@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyALyfBlOsvmKDwNQLTKurC5hf_BmFKYnr4",
-  authDomain: "vann-53570.firebaseapp.com",
-  databaseURL: "https://vann-53570.firebaseio.com",
-  projectId: "vann-53570",
-  storageBucket: "vann-53570.appspot.com",
-  messagingSenderId: "476713717043",
-  appId: "1:476713717043:web:93e1c456a05aa8b8130246",
-  measurementId: "G-8PRCPKPS2K"
+  apiKey: "AIzaSyBqZ817fOLwFxG7B9DipM0HqUznx1AulCQ",
+  authDomain: "pcccc-iot.firebaseapp.com",
+  databaseURL: "https://pcccc-iot.firebaseio.com",
+  projectId: "pcccc-iot",
+  storageBucket: "pcccc-iot.appspot.com",
+  messagingSenderId: "297582591282",
+  appId: "1:297582591282:web:4d1a646b0f2af8d300ab2b",
+  measurementId: "G-H33NTR7BPC"
 };
 // Initialize Firebase
  firebase.initializeApp(firebaseConfig);

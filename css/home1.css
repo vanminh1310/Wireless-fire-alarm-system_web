@@ -184,7 +184,7 @@ body{
   transition: 0.5s ease;
   cursor: pointer;
 
- margin: 24px;
+ margin: 10px;
   margin-top: 40px;
   width: 100px;
   height:60px;
@@ -462,7 +462,4 @@ top:1px;
 }
 .tb{
   color: red;
-}
-.btn2{
-  margin-left: 5vw;
 }

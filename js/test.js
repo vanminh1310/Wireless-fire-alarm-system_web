@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyALyfBlOsvmKDwNQLTKurC5hf_BmFKYnr4",
-  authDomain: "vann-53570.firebaseapp.com",
-  databaseURL: "https://vann-53570.firebaseio.com",
-  projectId: "vann-53570",
-  storageBucket: "vann-53570.appspot.com",
-  messagingSenderId: "476713717043",
-  appId: "1:476713717043:web:93e1c456a05aa8b8130246",
-  measurementId: "G-8PRCPKPS2K"
+  apiKey: "AIzaSyBqZ817fOLwFxG7B9DipM0HqUznx1AulCQ",
+  authDomain: "pcccc-iot.firebaseapp.com",
+  databaseURL: "https://pcccc-iot.firebaseio.com",
+  projectId: "pcccc-iot",
+  storageBucket: "pcccc-iot.appspot.com",
+  messagingSenderId: "297582591282",
+  appId: "1:297582591282:web:4d1a646b0f2af8d300ab2b",
+  measurementId: "G-H33NTR7BPC"
 };
 firebase.initializeApp(firebaseConfig);
 
@@ -60,9 +60,11 @@ firebase.initializeApp(firebaseConfig);
   }
     
   
+  var bnt1 = document.getElementById("btn1")
+  var canhbao2 = document.getElementById("canhbao2")
+  var nd = document.getElementById('nd')
   
-  
-  var modal = document.getElementById('modal_ecall');
+  var modal1 = document.getElementById('modal_ecall1');
     var btn2= document.getElementById('bnt2');
     btn2.onclick = function() {
           modal.style.display = "none";
@@ -89,8 +91,12 @@ firebase.initializeApp(firebaseConfig);
       
         } else {
           // No user is signed in.
-      
-       
+          modal1.style.display="block"
+          document.getElementById("canhbao").style.display="none"
+          document.getElementById("name_p").style.display="none"
+          document.getElementById("st").style.display="none"
+          document.getElementById("nd").innerHTML="Dường như bạn chưa đăng nhập! Hãy đăng nhập để tiếp tục"
+          
       
         }
       });
@@ -154,7 +160,7 @@ firebase.initializeApp(firebaseConfig);
     console.log(readh);
     });
     readt.on('value',function(readt){
-      t.innerHTML=readt.val();
+      t.innerHTML=Math.ceil( readt.val(),1);
       console.log(readt);
       });
       readg.on('value',function(readg){
@@ -162,10 +168,14 @@ firebase.initializeApp(firebaseConfig);
        g.innerHTML="OK";
       }
       else{
-        g.innerHTML="<span style='color: red;'>Wr</span>"
+        //f.innerHTML="<span style='color: red;'>Wr</span>"
         g.innerHTML="<span style='color: red;'>Wr</span>"
         name_p.innerHTML="<span style='color: red;'>101<span>"
         st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
+        canhbao2.style.display="none"
+        nd.style.display="none"
+        btn2.style.display="block"
+      
   
         modal.style.display='block';
   
@@ -180,12 +190,17 @@ firebase.initializeApp(firebaseConfig);
       }
       else{
         f.innerHTML="<span style='color: red;'>Wr</span>"
-        g.innerHTML="<span style='color: red;'>Wr</span>"
+        
         name_p.innerHTML="<span style='color: red;'>101<span>"
         st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
   
         modal.style.display='block';
-  
+
+        canhbao2.style.display="none"
+        nd.style.display="none"
+        btn2.style.display="block"
+     
+
       }
       console.log(readf);
         });
@@ -197,7 +212,7 @@ firebase.initializeApp(firebaseConfig);
       console.log(readh202);
       });
       readt202.on('value',function(readt202){
-        t202.innerHTML=readt202.val();
+        t202.innerHTML=Math.ceil(readt202.val());
         console.log(readt202);
         });
         readg202.on('value',function(readg202){
@@ -206,11 +221,17 @@ firebase.initializeApp(firebaseConfig);
         }
         else{
           g202.innerHTML="<span style='color: red;'>Wr</span>"
-          g.innerHTML="<span style='color: red;'>Wr</span>"
+          
           name_p.innerHTML="<span style='color: red;'>202<span>"
           st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
     
           modal.style.display='block';
+
+          canhbao2.style.display="none"
+          nd.style.display="none"
+          btn2.style.display="block"
+       
+          
     
         }
         console.log(readg202);
@@ -223,22 +244,26 @@ firebase.initializeApp(firebaseConfig);
         }
         else{
           f202.innerHTML="<span style='color: red;'>Wr</span>"
-          g.innerHTML="<span style='color: red;'>Wr</span>"
+          
           name_p.innerHTML="<span style='color: red;'>202<span>"
           st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
     
           modal.style.display='block';
+          canhbao2.style.display="none"
+          nd.style.display="none"
+          btn2.style.display="block"
+          
     
         }
         console.log(readf202);
           });
 // 303
 readh303.on('value',function(readh303){
-  h303.innerHTML=readh303.val();
+  h303.innerHTML=Math.ceil( readh303.val());
   console.log(readh303);
   });
   readt303.on('value',function(readt303){
-    t303.innerHTML=readt303.val();
+    t303.innerHTML=Math.ceil(readt303.val());
     console.log(readt303);
     });
     readg303.on('value',function(readg303){
@@ -247,11 +272,17 @@ readh303.on('value',function(readh303){
     }
     else{
       g303.innerHTML="<span style='color: red;'>Wr</span>"
-      g.innerHTML="<span style='color: red;'>Wr</span>"
+     
       name_p.innerHTML="<span style='color: red;'>303<span>"
       st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
 
       modal.style.display='block';
+
+      canhbao2.style.display="none"
+      nd.style.display="none"
+      btn2.style.display="block"
+     
+
 
     }
     console.log(readg);
@@ -264,12 +295,16 @@ readh303.on('value',function(readh303){
     }
     else{
       f303.innerHTML="<span style='color: red;'>Wr</span>"
-      g.innerHTML="<span style='color: red;'>Wr</span>"
+      
       name_p.innerHTML="<span style='color: red;'>303<span>"
       st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
 
       modal.style.display='block';
-
+      canhbao2.style.display="none"
+      nd.style.display="none"
+      btn2.style.display="block"
+     
+      
     }
     console.log(readf303);
       });
@@ -279,7 +314,7 @@ readh303.on('value',function(readh303){
   console.log(readh404);
   });
   readt404.on('value',function(readt404){
-    t404.innerHTML=readt404.val();
+    t404.innerHTML=Math.ceil( readt404.val());
     console.log(readt404);
     });
     readg404.on('value',function(readg404){
@@ -288,11 +323,16 @@ readh303.on('value',function(readh303){
     }
     else{
       g404.innerHTML="<span style='color: red;'>Wr</span>"
-      g.innerHTML="<span style='color: red;'>Wr</span>"
+      
       name_p.innerHTML="<span style='color: red;'>404<span>"
       st.innerHTML="<span style='color:#0093E9;'> phát hiện khí gas<span>"
 
       modal.style.display='block';
+
+      canhbao2.style.display="none"
+      nd.style.display="none"
+      btn2.style.display="block"
+     
 
     }
     console.log(readg404);
@@ -305,11 +345,17 @@ readh303.on('value',function(readh303){
     }
     else{
       f404.innerHTML="<span style='color: red;'>Wr</span>"
-      g.innerHTML="<span style='color: red;'>Wr</span>"
+      
       name_p.innerHTML="<span style='color: red;'>404<span>"
       st.innerHTML="<span style='color:#0093E9;'> phát hiện lửa<span>"
 
       modal.style.display='block';
+
+      canhbao2.style.display="none"
+      nd.style.display="none"
+      btn2.style.display="block"
+      
+
 
     }
     console.log(readf404);
